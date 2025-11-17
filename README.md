@@ -1,7 +1,7 @@
 Projeto Final de UC 605
 Autor: Catarina Tomaz, Diogo Simões
 
-Depois de dar pull ao projeto do VisualStudio deve abrir o cmd na pasta do projeto e correr o comando (docker-compose up -d) para criar os containers
+Depois de dar pull ao projeto do VisualStudio (localizado no branch master), deve abrir o cmd na pasta do projeto e correr o comando (docker-compose up -d) para criar os containers
 no Docker (se não tiver o Docker deve instalalo).
 
 Se não tiver os NuGet instalados deve abrir o cmd na pasta do projeto e correr os seguintes comandos um de cada vez (dotnet add package Pomelo.EntityFrameworkCore.MySql
