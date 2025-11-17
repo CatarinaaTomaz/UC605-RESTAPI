@@ -1,0 +1,32 @@
+# 🛒 SimoesSTORE - Loja Online de Tecnologia
+
+Projeto desenvolvido como parte do trabalho académico de Desenvolvimento Web.  
+O objetivo é criar um site completo, funcional e responsivo em HTML, CSS e JavaScript.
+
+---
+
+## 📌 Descrição do Projeto
+
+A SimoesSTORE é uma loja online fictícia de produtos de tecnologia.  
+O site foi construído em 2 semanas, seguindo um cronograma dividido em planejamento, desenvolvimento e finalização.
+
+### Funcionalidades principais:
+- Página inicial com seção de destaque.
+- Listagem de produtos em cards, com opção de adicionar ao carrinho.
+- Página/Seção Sobre Nós.
+- Formulário de Contato com validação em JavaScript.
+- Menu responsivo (incluindo botão “hambúrguer” em dispositivos móveis).
+- Layout responsivo para desktop, tablet e smartphone.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5 → Estrutura do site.  
+- CSS → Estilização e layout responsivo.  
+- JavaScript → Funcionalidades interativas (carrinho, menu, validação de formulário, produtos).  
+
+---
+
+
+

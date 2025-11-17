@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimoesSTORE (Tech) · Produto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/SimoesStore/styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Simoes<span class="serif">STORE</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Início</a>
+        <a href="products.html">Produtos</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contacto</a>
+        <a href="cart.html" class="cart-link">Carrinho <span id="cart-count" class="badge">0</span></a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="container product-page" aria-label="Produto">
+      <div class="gallery">
+        <div class="img-placeholder" id="prod-image" aria-label="Imagem do produto"></div>
+      </div>
+      <div class="details">
+        <h1 id="prod-name">Produto</h1>
+        <p id="prod-price" class="price">€ 0,00</p>
+        <p id="prod-desc">Descrição do produto.</p>
+        <div class="qty-row">
+          <label for="qty">Qtd</label>
+          <input id="qty" type="number" min="1" value="1">
+        </div>
+        <div class="cta-row">
+          <button class="btn btn-primary" id="add-to-cart">Adicionar ao carrinho</button>
+          <a class="btn btn-ghost" href="cart.html">Ver carrinho</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand brand-footer">Simoes<span class="serif">STORE</span></div>
+      <div class="footer-copy">© <span id="year"></span> SimoesSTORE.</div>
+    </div>
+  </footer>
+
+  <script src="/SimoesStore/js/data.js"></script>
+  <script src="/SimoesStore/js/script.js"></script>
+</body>
+</html>

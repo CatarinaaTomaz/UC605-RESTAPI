@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimoesSTORE (Tech) · Início</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/SimoesStore/styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Simoes<span class="serif">STORE</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="products.html">Produtos</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contacto</a>
+        <a href="cart.html" class="cart-link">Carrinho <span id="cart-count" class="badge">0</span></a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hardware, periféricos e smart home.<br><span class="accent">Tecnologia que potencia o teu dia.</span></h1>
+          <p>Explora lançamentos e best-sellers com envio rápido em Portugal.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="products.html">Explorar produtos</a>
+            <a class="btn btn-ghost" href="#destaques">Ver destaques</a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Circuitos e chip estilizados">
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container" aria-label="Categorias Tecnológicas">
+      <h2>Categorias Tecnológicas</h2>
+      <div class="grid-3">
+        <a class="category-card pop" href="products.html#categoria=portateis">
+          <div class="cat-visual cat-laptops"></div>
+          <h3>Portáteis</h3>
+        </a>
+        <a class="category-card pop" href="products.html#categoria=perifericos">
+          <div class="cat-visual cat-peripherals"></div>
+          <h3>Periféricos</h3>
+        </a>
+        <a class="category-card pop" href="products.html#categoria=smarthome">
+          <div class="cat-visual cat-smarthome"></div>
+          <h3>Smart Home</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured container" id="destaques" aria-label="Destaques">
+      <div class="section-head">
+        <h2>Destaques</h2>
+        <a class="link" href="products.html">Ver catálogo</a>
+      </div>
+      <div class="product-slider" id="slider"></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <h2>Recebe novidades e descontos</h2>
+        <form class="inline-form" id="newsletter-form" novalidate>
+          <label for="news-email" class="sr-only">Email</label>
+          <input id="news-email" name="email" type="email" placeholder="o.teu@email.com" required>
+          <button class="btn btn-primary" type="submit">Subscrever</button>
+          <small class="form-msg" id="news-msg" aria-live="polite"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand brand-footer">Simoes<span class="serif">STORE</span></div>
+        <p>Loja online</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contacto</a>
+        <a href="products.html">Catálogo</a>
+      </div>
+      <div class="footer-copy">© <span id="year"></span> SimoesSTORE. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="/SimoesStore/js/data.js"></script>
+  <script src="/SimoesStore/js/script.js"></script>
+</body>
+</html>

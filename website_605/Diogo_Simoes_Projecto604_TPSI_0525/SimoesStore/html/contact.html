@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimoesSTORE (Tech) · Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/SimoesStore/styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Simoes<span class="serif">STORE</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Início</a>
+        <a href="products.html">Produtos</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html" aria-current="page">Contacto</a>
+        <a href="cart.html" class="cart-link">Carrinho <span id="cart-count" class="badge">0</span></a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="container narrow" aria-label="Contacto">
+      <h1>Fala connosco</h1>
+      <form id="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" required>
+            <small class="form-msg"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            <small class="form-msg"></small>
+          </div>
+          <div class="form-field">
+            <label for="assunto">Assunto</label>
+            <input id="assunto" name="assunto" required>
+            <small class="form-msg"></small>
+          </div>
+          <div class="form-field field-full">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <small class="form-msg"></small>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <small id="contact-result" class="form-result" role="status" aria-live="polite"></small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand brand-footer">Simoes<span class="serif">STORE</span></div>
+      <div class="footer-copy">© <span id="year"></span> SimoesSTORE.</div>
+    </div>
+  </footer>
+
+  
+  <script src="/SimoesStore/js/data.js"></script>
+  <script src="/SimoesStore/js/script.js"></script>
+</body>
+</html>
