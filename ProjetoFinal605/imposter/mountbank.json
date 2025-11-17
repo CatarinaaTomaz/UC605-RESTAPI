@@ -1,0 +1,56 @@
+{
+  "imposters": [
+    {
+      "port": 4545,
+      "protocol": "http",
+      "stubs": [
+        {
+          "predicates": [
+            {
+              "and": [
+                { "equals": { "method": "GET" } },
+                { "startsWith": { "path": "/inventory/" } }
+              ]
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": { "Content-Type": "application/json" },
+                "body": {
+                  "sku": "12345",
+                  "stock": 50,
+                  "status": "Available"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "and": [
+                { "equals": { "method": "POST" } },
+                { "equals": { "path": "/payments" } }
+              ]
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 201,
+                "headers": { "Content-Type": "application/json" },
+                "body": {
+                  "transactionId": "tx_9999",
+                  "status": "Success",
+                  "message": "Payment processed"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
